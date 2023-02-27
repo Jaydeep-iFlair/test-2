@@ -27,13 +27,13 @@ body {
 /* ############################################################# */
 /* Default CSS */
 /* ############################################################# */
-
+/* 
 .container {
   max-width: 1080px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 ul,
 li {
@@ -262,7 +262,7 @@ button {
 
 .main {
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 230px minmax(0, 1fr);
 }
 
 .main__content {
@@ -452,10 +452,8 @@ button {
   float: right;
 }
 .dataTables_wrapper .dataTable td,
-.dataTables_wrapper .dataTable th{
+.dataTables_wrapper .dataTable th {
   width: 200px !important;
-
-  
 }
 
 .dataTables_wrapper .dataTable {
@@ -467,4 +465,27 @@ button {
   margin-left: 10px;
   border-radius: 10px;
   border: 2px solid var(--color-secondary);
+}
+
+/* ####### */
+
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+table caption {
+  padding: 0.5em 0;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
 }
